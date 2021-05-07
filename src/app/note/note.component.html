@@ -1,0 +1,12 @@
+<div class="note">
+  <div class="note-header">
+    <span class="title">{{note.title}}</span>
+    <span>
+      <button class="edit" [routerLink]="note.id">Edit</button>
+      <button class="delete" (click)="deleteNote(note.id)">Delete</button>
+    </span>
+  </div><hr/>
+  <div class="note-body">
+    {{note.body}}
+  </div>
+</div>

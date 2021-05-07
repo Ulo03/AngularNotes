@@ -1,0 +1,64 @@
+.new {
+  margin: 2rem auto;
+  width: 30vw;
+  text-align: center;
+}
+
+.new .input {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  outline: none;
+  border: 2px solid transparent;
+  background-color: rgba(0, 0, 0, 0.025);
+  border-radius: 0.25rem;
+  color: crimson;
+  width: 100%;
+  transition-duration: 0.3s;
+}
+
+.new .input:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.new .input:focus {
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.new .input.title::placeholder {
+  color: crimson;
+}
+
+.new .input.body::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.new .input.body::-webkit-scrollbar {
+  display: none;
+}
+
+.new button.input:hover {
+  cursor: pointer;
+}
+
+.new .input:focus {
+  border: 2px solid transparent;
+}
+
+.new button.input {
+  margin-top: 1rem;
+}
+
+.new .title {
+  margin-bottom: 0.75rem;
+}
+
+.new .body {
+  height: 65vh;
+  resize: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+
+.new .back {
+  margin-bottom: 1rem;
+}

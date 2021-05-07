@@ -1,0 +1,7 @@
+<div class="list">
+  <input placeholder="Filter..." class="input" [(ngModel)]="filter" (input)="refreshNotes()"/>
+  <div class="notes">
+    <app-note *ngFor="let note of notes" [note]="note"></app-note>
+  </div>
+  <button class="input" routerLink="new">New Note</button>
+</div>

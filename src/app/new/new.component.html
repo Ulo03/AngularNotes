@@ -1,0 +1,6 @@
+<div class="new">
+  <button class="input back" routerLink="">Back to Notes</button>
+  <input type="text" class="input title" placeholder="Title..." [(ngModel)]="title" />
+  <textarea type="text" class="input body" placeholder="Note..." [(ngModel)]="body"></textarea>
+  <button class="input" (click)="addNote()" [routerLink]="(title && body) ? [''] : []">Add Note</button>
+</div>
